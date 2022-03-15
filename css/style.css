@@ -1,0 +1,210 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* General CSS */
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: rgb(40, 56, 143);
+  margin: 0px 0px 18px 0px;
+}
+
+.title.title--centralized {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(40, 56, 143);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0px 0px 12px 0px;
+}
+
+.activity {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 428px;
+  margin: 0px auto 24px auto;
+}
+
+.description:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+/* Navbar */
+
+#navbar {
+  background-color: #3f3d56;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.navbar__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.navbar__list li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.navbar__list li:first-child {
+  margin: 0px auto 0px 0px;
+}
+
+.navbar__list li img {
+  max-width: 36px;
+}
+
+.navbar__list li:first-child img {
+  max-width: 94px;
+}
+
+.navbar__list li p {
+  display: none;
+
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  margin: 0px 0px 12px 0px;
+}
+
+.container {
+  display: block;
+  max-width: 1040px;
+  margin: 0 auto 0 auto;
+  padding: 32px 24px 32px 24px;
+}
+
+.container.container--small {
+  padding: 18px 24px 16px 24px;
+}
+
+.controller.controller--reverse {
+  flex-direction: row-reverse;
+}
+
+/* Form */
+
+#form {
+  scroll-margin-top: 75px;
+  background-color: rgba(239, 239, 239, 0.38);
+  margin: 75px 0px 0px 0px;
+}
+
+.form__controller {
+}
+
+.form__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+
+.form__list__item {
+  /* width: 100%; */
+}
+
+.form__label {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(40, 56, 143);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0px 0px 8px 0px;
+}
+
+.form__input {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(40, 56, 143);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  border: 1px solid rgba(239, 239, 239, 1);
+}
+
+#footer {
+  background-color: rgb(108, 99, 255);
+}
+
+.footer__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.footer__list li:last-child {
+  margin: 0px 0px 0px auto;
+}
+
+.footer__list li img {
+  max-width: 28px;
+}
+
+@media (min-width: 1024px) {
+  .controller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    gap: 48px;
+  }
+
+  .column {
+    max-width: 50%;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  .description {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .image {
+    max-width: 1024px;
+    margin: 0px 0px 0px 0px;
+  }
+}

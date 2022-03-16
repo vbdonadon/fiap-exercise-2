@@ -37,15 +37,17 @@
         <form class="form__controller" action="">
           <ul class="form__list">
             <li class="form__list__item">
-              <label for="" class="form__label">Nome do Ponto Turístico</label>
-              <input type="text" class="form__input form__input--text" />
+              <label for="name" class="form__label">Nome do Ponto Turístico</label>
+              <input type="text" id="name" name="name" class="form__input form__input--text" placeholder="Digite o nome do ponto turístico" />
             </li>
 
             <li class="form__list__item">
-              <label for="" class="form__label">Descrição</label>
+              <label for="description" class="form__label">Descrição</label>
               <textarea
                 type=""
                 class="form__input form__input--textarea"
+                id="description" name="description"
+                placeholder="Digite uma breve descrição sobre o ponto turístico"
               ></textarea>
             </li>
             
@@ -53,13 +55,13 @@
             <li class="form__list__item">
               <ul class="form__list__item__adress">
                 <li>
-                  <label for="" class="form__label">Endereço</label>
-                  <input type="text" class="form__input form__input--text" />
+                  <label for="address" class="form__label">Endereço</label>
+                  <input type="text" id="address" name="address" class="form__input form__input--text"  placeholder="Digite o endereço do ponto turístico"/>
                 </li>
 
                 <li>
-                  <label for="" class="form__label">Número</label>
-                  <input type="number" class="form__input form__input--text" />
+                  <label for="number" class="form__label">Número</label>
+                  <input type="number" id="number" name="number" class="form__input form__input--text"  placeholder="Digite o número"/>
                 </li>
               </ul>
             </li>
@@ -67,25 +69,24 @@
             <li class="form__list__item">
               <ul class="form__list__item__adress">
                 <li>
-                  <label for="" class="form__label">CEP</label>
-                  <input type="number" class="form__input form__input--text" />
+                  <label for="cep" class="form__label">CEP</label>
+                  <input type="text" id="cep" name="cep" class="form__input form__input--text"  placeholder="Digite o CEP do ponto turístico"/>
                 </li>
 
                 <li>
                   <li class="form__list__item">
-                    <label for="" class="form__label">Wi-Fi</label>
+                    <p class="form__label">Wi-Fi</p>
                     <ul class="form__list__item__checkboxes">
                       <li>
-                        <label for="" class="form__label form__label--no-margin"
-                          >Sim</label
-                        >
-                        <input type="radio" class="form__input form__input--radio" />
-                      </li>
-                      <li>
-                        <label for="" class="form__label form__label--no-margin"
+                        <label for="wifiNo" class="form__label form__label--no-margin"
                           >Não</label
                         >
-                        <input type="radio" class="form__input form__input--radio" />
+                        <input type="radio" value="Não" id="wifiNo" name="wifi" class="form__input form__input--radio" />
+
+                        <label for="wifiYes" class="form__label form__label--no-margin"
+                          >Sim</label
+                        >
+                        <input type="radio" value="Sim" id="wifiYes" name="wifi" class="form__input form__input--radio" />
                       </li>
                     </ul>
                   </li>
@@ -99,36 +100,36 @@
                   >Tipos de Estabelecimento</label
                 >
                 <select name="types" id="types">
-                  <option value="volvo">Restaurante</option>
-                  <option value="saab">Mercado</option>
-                  <option value="mercedes">Parque</option>
-                  <option value="mercedes">Hotéis</option>
-                  <option value="mercedes">Pousadas</option>
+                  <option value="restaurante">Restaurante</option>
+                  <option value="mercado">Mercado</option>
+                  <option value="parque">Parque</option>
+                  <option value="hoteis">Hotéis</option>
+                  <option value="pousadas">Pousadas</option>
                 </select>
               </div>
 
               <div>
-                <p for="" class="form__label">Horario de Funcionamento</p>
+                <p class="form__label">Horario de Funcionamento</p>
 
                 <ul class="form__list__item__time">
                   <li>
-                    <label for="" class="form__label">Abre</label>
+                    <label for="abre" class="form__label">Abre</label>
                     <input
                       class="form__label form__label--no-margin form__input--time"
                       type="time"
-                      id="appt"
-                      name="appt"
+                      id="abre"
+                      name="abre"
                       required
                     />
                   </li>
 
                   <li>
-                    <label for="" class="form__label">Fecha</label>
+                    <label for="fecha" class="form__label">Fecha</label>
                     <input
                       class="form__label form__label--no-margin form__input--time"
                       type="time"
-                      id="appt"
-                      name="appt"
+                      id="fecha"
+                      name="fecha"
                       required
                     />
                   </li>
@@ -140,45 +141,45 @@
               <p class="form__label">Meios de Pagamento</p>
               <ul class="form__list__item__radios">
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="credito" class="form__label form__label--no-margin"
                     >Cartão de Crédito</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="credito" name="credito" value="Cartão de Crédito" class="form__input form__input--radio" checked/>
                 </li>
 
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="debito" class="form__label form__label--no-margin"
                     >Cartão de Débito</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="debito" name="debito" value="Cartão de Débito" class="form__input form__input--radio" checked/>
                 </li>
 
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="vale-refeicao" class="form__label form__label--no-margin"
                     >Vale-Refeição</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="vale-refeicao" name="vale-refeicao" value="Vale-Refeição" class="form__input form__input--radio" />
                 </li>
 
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="vale-alimentacao" class="form__label form__label--no-margin"
                     >Vale-Alimentação</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="vale-alimentacao" name="vale-alimentacao" value="Vale-Alimentação" class="form__input form__input--radio" />
                 </li>
 
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="pix" class="form__label form__label--no-margin"
                     >Pix</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="pix" name="pix" value="Pix" class="form__input form__input--radio" />
                 </li>
 
                 <li>
-                  <label for="" class="form__label form__label--no-margin"
+                  <label for="dinheiro" class="form__label form__label--no-margin"
                     >Dinheiro</label
                   >
-                  <input type="radio" class="form__input form__input--radio" />
+                  <input type="checkbox" id="dinheiro" name="dinheiro" value="Dinheiro" class="form__input form__input--radio" />
                 </li>
               </ul>
             </li>
